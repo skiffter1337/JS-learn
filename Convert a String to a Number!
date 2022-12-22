@@ -1,0 +1,7 @@
+const stringToNumber = function(str){
+  let num;
+  if (typeof str == 'string') {
+    return num = Number(str);
+  }
+  
+}
