@@ -1,0 +1,7 @@
+function squareSum(numbers){
+let square = 0;
+  for (i = 0; i < numbers.length; i++ ) {
+  square += numbers[i]**2;
+}
+  return square;
+}
