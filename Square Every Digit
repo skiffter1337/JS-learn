@@ -1,0 +1,9 @@
+function squareDigits(num){
+  let arr = String(num).split("");  //  [ '3', '2', '1', '2' ]
+  let squared = [];
+  for (let e = 0; e < arr.length; e++) {
+  squared.push(arr[e]**2);  
+  }
+  let result = Number(squared.join(""));
+  return result;
+}
