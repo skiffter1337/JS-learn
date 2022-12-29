@@ -1,0 +1,8 @@
+function arrayPlusArray(arr1, arr2) {
+  let arrays = [...arr1, ...arr2];
+  let arraysSum = 0;
+  for( let i = 0; i < arrays.length; i++) {
+    arraysSum += arrays[i];
+  }
+  return arraysSum; 
+}
