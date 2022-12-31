@@ -1,0 +1,8 @@
+function doubleChar(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    let dc = str[i];
+    result += dc + dc;
+  } 
+   return result;
+}
