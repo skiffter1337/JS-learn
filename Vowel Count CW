@@ -1,0 +1,11 @@
+function getCount(str) {
+  str.split("");
+  let  vowelCount = 0;
+  for (let j = 0; j < str.length; j++) {
+    if (str[j] == "a" || str[j] == "e" || str[j] == "i" || str[j] == "o" || str[j] == "u") {
+      vowelCount++
+    }
+  }
+  return vowelCount;
+}
+
