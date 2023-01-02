@@ -1,0 +1,8 @@
+let summation = function (num) {
+let list = 0;
+while (num > 0) {
+  list += num;
+  num--
+}
+return list;
+};
