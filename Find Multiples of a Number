@@ -1,0 +1,11 @@
+function findMultiples(integar, limit) {
+
+  let arr = [];
+  
+    for (let i=integar; i<=limit; i+=integar){
+      arr.push(i)
+    }
+
+  return arr
+  
+}
