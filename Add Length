@@ -1,0 +1,9 @@
+function addLength(str) {
+  let array = str.split(" ");
+  
+  for(let i = 0; i < array.length; i++) {
+  let arrLength = array[i].length
+  array[i] += " " + arrLength;
+} 
+  return array;
+}
