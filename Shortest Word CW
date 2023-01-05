@@ -1,0 +1,11 @@
+function findShort(s){
+const array = s.split(" ");
+let shortest = Infinity;
+for(let i = 0; i < array.length; i++) {
+  let wordLength = array[i].length;
+  if(wordLength < shortest) {
+    shortest = wordLength;
+  }
+}
+return shortest;
+}
