@@ -1,0 +1,7 @@
+function setAlarm(employed, vacation){
+if(employed == vacation) {
+  return false;
+  } else if(employed == true) {
+    return true;
+  } else return false;
+}
