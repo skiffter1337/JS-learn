@@ -1,0 +1,11 @@
+function fakeBin(x){
+let result = "";
+for (let i of x) {
+  if (i < 5) {
+    result += 0;
+  } else if (i >= 5) {
+    result += 1;
+  }
+}
+    return result
+}
