@@ -1,0 +1,15 @@
+<!doctype html>
+<script src="https://ru.js.cx/test/libs.js"></script>
+<script src="test.js"></script>
+<script>
+
+function truncate(str, maxlength) {
+  if(str.length > maxlength) {
+  return str.slice(0, maxlength - 1) + "…";
+  } else if(str.length <= maxlength)
+  return str;
+} 
+
+</script>
+
+</html>
