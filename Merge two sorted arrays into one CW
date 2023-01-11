@@ -1,0 +1,6 @@
+function mergeArrays(arr1, arr2) {
+  let arr = [...arr1,...arr2].sort( (a,b) => a - b).filter( (item, index, self) => {
+    return self.indexOf(item) === index
+});
+  return arr;
+}
