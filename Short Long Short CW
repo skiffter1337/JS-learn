@@ -1,0 +1,5 @@
+function solution(a, b){
+  let arr = [a, b];
+  let newarr = arr.sort((a, b) => a.length - b.length);
+  return `${newarr[0]}${newarr[1]}${newarr[0]}`
+}
