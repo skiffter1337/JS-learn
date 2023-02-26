@@ -1,0 +1,5 @@
+
+function XO(str) {
+  let arr = str.toLowerCase().split("");
+  return arr.filter(e => e === "x").length === arr.filter(e => e === "o").length ? true : false
+}
