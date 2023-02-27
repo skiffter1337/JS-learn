@@ -1,0 +1,13 @@
+function maskify(cc) {
+    if(cc.length < 4) {
+        return cc
+    }  else {
+        let arr = cc.split("")
+        let stringOfSharp = "#".repeat(arr.length - 4);
+        let splicedArr = arr.splice(-4);
+        let resultArr = [stringOfSharp, ...splicedArr];
+        let resultStr = resultArr.join("");
+        return resultStr;
+    }
+
+}
