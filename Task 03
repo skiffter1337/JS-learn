@@ -1,0 +1,10 @@
+function makeCounter(num) {
+    let count = num
+    const control = () => ({
+        increase: () => ++count,
+        decrease: () => --count,
+        reset: () => count = 0,
+        set: (newCount) => count = newCount
+    })
+    return control
+}
