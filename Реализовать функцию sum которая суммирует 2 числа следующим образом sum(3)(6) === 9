@@ -1,0 +1,4 @@
+function sum(a) {
+    const sum2 = (b) => a + b
+    return sum2
+}
