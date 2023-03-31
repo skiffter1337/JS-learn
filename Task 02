@@ -1,0 +1,7 @@
+function makeCounter(num) {
+    let count = num
+    const counter = () => {
+        return  ++count
+    }
+    return counter
+}
