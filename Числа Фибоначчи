@@ -1,0 +1,18 @@
+////////////////////////// Цикл
+const fib = (n) => {
+    let arr = [1, 1]
+    for (let i = 2; i < n; i++) {
+        arr.push(arr[arr.length - 1] + arr[arr.length - 2])
+    }
+    return arr[arr.length - 1]
+}
+
+////////////////////////// Рекурсия
+const fib = (n) => {
+    if(n <= 1) {
+        return n
+    } else {
+      return fib(n - 1) + fib(n - 2)
+    }
+
+}
