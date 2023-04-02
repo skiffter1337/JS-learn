@@ -1,0 +1,27 @@
+//////////////////////  Цикл
+
+const sumTo = (n) => {
+    let sum = 0
+    if(n === 1) {
+       return 1
+   } else {
+
+    for (let i = 0; i <= n; i++) {
+        sum = sum + i
+    }
+        return sum
+   }
+}
+
+////////////////////// Рекурсия 
+
+const sumTo = (n) => {
+   if(n === 1) {
+       return n
+   } else {
+       return n + sumTo(n - 1)
+   }
+}
+
+//////////////////////  Формула арифметической прогрессии 
+const sumTo = (n) =>  n * (n + 1) / 2
