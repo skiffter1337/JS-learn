@@ -1,0 +1,1 @@
+const peopleWithAgeDrink = (old) => old >= 21 ? "drink whisky" : old < 21 && old >= 18 ? "drink beer" : old < 18 && old >= 14 ? "drink coke" : "drink toddy"
