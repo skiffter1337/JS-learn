@@ -1,0 +1,50 @@
+function high(x) {
+    let alphabet = {
+        a: 1,
+        b: 2,
+        c: 3,
+        d: 4,
+        e: 5,
+        f: 6,
+        g: 7,
+        h: 8,
+        i: 9,
+        j: 10,
+        k: 11,
+        l: 12,
+        m: 13,
+        n: 14,
+        o: 15,
+        p: 16,
+        q: 17,
+        r: 18,
+        s: 19,
+        t: 20,
+        u: 21,
+        v: 22,
+        w: 23,
+        x: 24,
+        y: 25,
+        z: 26
+    }
+    let result = x.split(" ")
+    let newArr = []
+    let num = 0
+    let arr = x.split(" ")
+    arr.forEach((el, index) => {
+        for (let i = 0; i < el.length; i++) {
+            num += alphabet[el[i]]
+        }
+        newArr.push(num)
+        num = 0
+    })
+    let maxIndex = 0
+    for (let i = 1; i < newArr.length; i++) {
+        if(newArr[i] > newArr[maxIndex]) {
+            maxIndex = i
+        }
+    }
+    return result[maxIndex]
+}
+console.log("awefwef"[0])
+console.log(high('take me to semynak'))
