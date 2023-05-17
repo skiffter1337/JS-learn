@@ -1,0 +1,3 @@
+function toBinary(n){
+  return JSON.parse(n.toString(2));
+}
