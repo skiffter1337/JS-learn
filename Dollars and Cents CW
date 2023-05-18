@@ -1,0 +1,5 @@
+function formatMoney(amount) {
+    let stringAmount = "" + amount.toString()
+    return stringAmount.indexOf(".") === -1 ? `$${stringAmount}.00` : stringAmount[stringAmount.indexOf(".") + 2] === undefined ? `$${stringAmount}0` : `$${stringAmount}`
+
+}
