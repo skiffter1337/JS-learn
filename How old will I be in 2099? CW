@@ -1,0 +1,7 @@
+const calculateAge = (a, b) => {
+    return a === b ? "You were born this very year!"
+        : a > b && a - b > 1 ? `You will be born in ${a - b} years.`
+            : a > b && a - b === 1 ? `You will be born in ${a - b} year.`
+                : a < b && b - a > 1 ? `You are ${b - a} years old.`
+                    : `You are ${b - a} year old.`
+}
