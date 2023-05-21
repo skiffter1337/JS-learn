@@ -1,0 +1,13 @@
+function spinWords(string){
+  let arr1 = []
+
+    string.split(" ").map(el => {
+        if(el.length >= 5) {
+           arr1.push(el.split("").reverse().join(""))
+        } else arr1.push(el)
+
+    } )
+ return arr1.join(" ")
+
+}
+
