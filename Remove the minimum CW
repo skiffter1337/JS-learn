@@ -1,0 +1,7 @@
+function removeSmallest(numbers) {
+    if (numbers.length === 0) return []
+  
+    let sortedArr = [...numbers].sort((a, b) => a - b)
+    let index = numbers.indexOf(sortedArr[0])
+    return numbers.filter((el, i) => i !== index)
+}
