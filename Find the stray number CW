@@ -1,0 +1,4 @@
+function stray(numbers) {
+    let sortedArr = numbers.sort((a, b) => a - b)
+    return sortedArr[0] !== sortedArr[1] && sortedArr[0] !== sortedArr[2] ? sortedArr[0] : sortedArr[sortedArr.length - 1]
+}
