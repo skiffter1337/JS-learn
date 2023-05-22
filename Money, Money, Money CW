@@ -1,0 +1,9 @@
+function calculateYears(principal, interest, tax, desired) {
+    let years = 0
+    let sum = principal
+    while (sum < desired) {
+        sum = sum + ( (sum * interest) - ( (sum * interest)  * tax) )
+        years++
+    }
+    return years
+}
