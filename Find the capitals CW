@@ -1,0 +1,5 @@
+const capitals = function (word) {
+    let arr = [];
+  word.split("").map((el, i) => el === el.toUpperCase() && arr.push(i))
+    return arr
+};
