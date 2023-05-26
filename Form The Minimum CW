@@ -1,0 +1,4 @@
+function minValue(values){
+    const uniqSorted = [...new Set(values)].sort((a, b) => a - b)
+    return +uniqSorted.reduce((acc, el) => acc + el, "")
+}
