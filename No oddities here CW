@@ -1,0 +1,7 @@
+function noOdds( values ){
+    let arr = []
+   values.forEach(el => {
+       if(el === 0 || el % 2 === 0) arr.push(el)
+   })
+    return arr
+}
