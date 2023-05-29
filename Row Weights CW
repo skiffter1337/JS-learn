@@ -1,0 +1,10 @@
+function rowWeights(array){
+   let team1 = 0;
+   let team2 = 0;
+    array.forEach((el, i) => {
+        if(i % 2 === 0) {
+            team1 += el
+        } else team2 += el
+    })
+    return [team1, team2]
+}
