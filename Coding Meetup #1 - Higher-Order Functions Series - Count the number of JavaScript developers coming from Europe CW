@@ -1,0 +1,5 @@
+function countDevelopers(list) {
+    let europianDevs = 0
+    list.forEach(el => el.continent === 'Europe' && el.language === "JavaScript" && europianDevs++)
+    return europianDevs
+}
