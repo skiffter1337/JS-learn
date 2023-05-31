@@ -1,0 +1,4 @@
+function sayHello( name, city, state ) {
+  let nameStr = name.join(" ")
+  return `Hello, ${nameStr}! Welcome to ${city}, ${state}!`
+}
