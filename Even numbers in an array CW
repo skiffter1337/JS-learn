@@ -1,0 +1,4 @@
+function evenNumbers(array, number) {
+    let newArr = array.filter(el => el % 2 === 0)
+    return newArr.slice(newArr.length - number)
+}
