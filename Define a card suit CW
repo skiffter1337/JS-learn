@@ -1,0 +1,3 @@
+function defineSuit(card) {
+    return card.endsWith('♠') ? 'spades' : card.endsWith('♣') ? 'clubs' : card.endsWith('♥') ? 'hearts' : 'diamonds'
+}
