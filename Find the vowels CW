@@ -1,0 +1,8 @@
+function vowelIndices(word) {
+    let vowelsIndex = []
+    word.toLowerCase().split("").forEach((el, i) => {
+        if (el === "a" || el === "o" || el === "e" || el === "u" || el === "i" || el === "y")
+            vowelsIndex.push(i + 1);
+    })
+    return vowelsIndex
+}
