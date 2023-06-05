@@ -1,0 +1,4 @@
+function bump(x) {
+    let arr = x.split("").filter(el => el === "n")
+    return arr.length <= 15 ? "Woohoo!" : "Car Dead"
+}
