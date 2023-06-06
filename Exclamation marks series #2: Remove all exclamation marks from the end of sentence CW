@@ -1,0 +1,9 @@
+function remove (string) {
+    let res = string
+    for (let i = 0; i < res.length ; i++) {
+        if(res.endsWith("!")) {
+            res = res.slice(0, -1)
+        }
+    }
+    return res
+}
