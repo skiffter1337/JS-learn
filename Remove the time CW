@@ -1,0 +1,4 @@
+function shortenToDate(longDate) {
+    let index = longDate.indexOf(",")
+    return  longDate.slice(0, index)
+}
