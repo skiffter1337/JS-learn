@@ -1,0 +1,5 @@
+function lowercaseCount(str){
+  let lowerCaseLetters = 0
+    str.replace(/[^a-zA-Zа-яА-Я]/g, "").split("").forEach(el => el === el.toLowerCase() && lowerCaseLetters++)
+    return lowerCaseLetters
+}
