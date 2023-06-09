@@ -1,0 +1,8 @@
+  function elevator(left, right, call) {
+    if (left === right) return 'right'
+
+    let leftDif = Math.abs(call - left)
+    let rightDif = Math.abs(call - right)
+    return leftDif === rightDif ? 'right' : leftDif < rightDif ? 'left' : 'right'
+
+}
