@@ -1,0 +1,13 @@
+const palindromeChainLength = function(n) {
+
+   if(n.toString() === n.toString().split("").reverse().join("")) {
+       return 0
+   }
+
+   let steps = 0
+    while (n.toString() !== n.toString().split("").reverse().join("")) {
+       n += +n.toString().split("").reverse().join("")
+        steps++
+    }
+   return steps
+};
