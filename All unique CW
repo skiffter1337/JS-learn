@@ -1,0 +1,3 @@
+function hasUniqueChars(str){
+   return str.split("").length === [...new Set(str.split(""))].length
+}
