@@ -1,0 +1,15 @@
+function repeats(arr){
+let dups = []
+    arr.sort((a, b) => a - b).forEach((el, i, arr) => {
+        if(arr[i] === arr[i + 1] ) {
+            dups.push(el)
+        }
+    })
+    let uniq = arr
+    debugger
+    for (let i = 0; i < dups.length + 1; i++) {
+        debugger
+        uniq = uniq.filter((el) => el !== dups[i])
+    }
+    return uniq.reduce((acc, el) => acc + el, 0)
+}
