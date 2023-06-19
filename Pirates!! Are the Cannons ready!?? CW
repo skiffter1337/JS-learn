@@ -1,0 +1,4 @@
+const cannonsReady = (gunners) => {
+   const isReady = Object.values(gunners)
+   return  isReady.indexOf('nay') !== -1 ? 'Shiver me timbers!' : 'Fire!'
+}
