@@ -1,0 +1,6 @@
+const menFromBoys = (arr) =>  {
+    return[
+        ...new Set(arr.filter(el => el % 2 === 0).sort((a, b) => a - b)),
+        ...new Set(arr.filter(el => el % 2 !== 0).sort((a, b) => b - a))
+    ]
+}
