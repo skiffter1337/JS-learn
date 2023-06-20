@@ -1,0 +1,13 @@
+function growingPlant(upSpeed, downSpeed, desiredHeight) {
+    let height = 0
+let days = 0
+while (height < desiredHeight) {
+    if(height + upSpeed < desiredHeight) {
+        height += upSpeed - downSpeed
+    } else {
+        return days + 1
+    }
+    days++
+}
+return days
+}
