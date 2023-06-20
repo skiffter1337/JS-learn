@@ -1,0 +1,9 @@
+function countLanguages(list) {
+   let languages = {}
+   list.forEach(el => {languages[el.language] = 0})
+
+    let languagesKeys = Object.keys(languages)
+    
+   list.forEach(el => languagesKeys.indexOf(el.language) !== -1 && languages[el.language]++)
+    return  languages
+}
