@@ -1,0 +1,3 @@
+function modifiedSum(a, n) {
+return [...a].reduce((acc, el) => Math.pow(el, n) + acc, 0) - [...a].reduce((acc, el) =>  acc + el,0)
+}
