@@ -1,0 +1,10 @@
+function orderFood(list) {
+    let food = []
+    list.map(el => Object.values(el)).forEach(el => food.push(el[el.length - 1]))
+    food = [...new Set(food)]
+    const foodCount = []
+    for (let i = 0; i < food.length ; i++) {
+        foodCount.push(list.filter(el => el.meal === food[i]).length)
+    }
+    return Object.assign(...food.map((el, i) => ({[el]: foodCount[i]})))
+}
