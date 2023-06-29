@@ -1,0 +1,10 @@
+function halvingSum(n) {
+    let elem = n
+    let res = n
+    while (elem > 1) {
+        elem =  Math.floor(elem / 2)
+        res += elem
+        debugger
+    }
+return res
+}
