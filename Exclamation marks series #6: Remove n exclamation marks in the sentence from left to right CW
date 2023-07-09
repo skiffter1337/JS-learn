@@ -1,0 +1,9 @@
+function remove(s, n) {
+    let result = s
+
+    for (let i = n; i > 0; i--) {
+        result = result.replace(/!/, '')
+    }
+    
+    return result
+}
