@@ -1,0 +1,11 @@
+function generateShape(integer) {
+    let res = ''
+
+    for (let i = integer; i > 0; i--) {
+        if(i === 1) {
+            return  res += '+'.repeat(integer)
+        }
+        res += '+'.repeat(integer) + '\n'
+    }
+    return res
+}
