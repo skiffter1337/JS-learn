@@ -1,0 +1,5 @@
+function sameCase(a, b) {
+    return !a.match(/[a-z]/i) || !b.match(/[a-z]/i) ? -1
+        : a === a.toUpperCase() && b === b.toUpperCase() ? 1
+            : a === a.toLowerCase() && b === b.toLowerCase() ? 1 : 0
+}
