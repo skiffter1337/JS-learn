@@ -1,0 +1,3 @@
+const filterString = (value) => {
+ return  +value.replace(/[a-z]/g, '')
+}
