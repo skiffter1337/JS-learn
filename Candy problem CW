@@ -1,0 +1,7 @@
+function candies(kids){
+    if(kids.length <= 1) {
+        return -1
+    }
+    const mostCandiesNum = Math.max(...kids)
+    return kids.filter(el => el !== mostCandiesNum).reduce((acc, el) => mostCandiesNum - el + acc, 0)
+}
