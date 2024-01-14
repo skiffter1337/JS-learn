@@ -1,0 +1,4 @@
+function timeForMilkAndCookies(date){
+    const eveDate = new Date(date).toLocaleString('ru', { day: 'numeric', month: 'numeric', year: 'numeric'}).split(".")
+    return (eveDate[0] === "24" && eveDate[1] === "12")
+}
