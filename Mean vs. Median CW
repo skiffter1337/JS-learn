@@ -1,0 +1,7 @@
+function meanVsMedian(n) {
+    const sortedArr = n.sort((a, b) => a - b)
+    const sumOfN = sortedArr.reduce((acc, el) => acc + el, 0)
+    let mean = sumOfN / n.length
+    let median = sortedArr[Math.round(sortedArr.length / 2) - 1]
+    return median === mean ? 'same' : mean > median ? 'mean' : 'median'
+}
