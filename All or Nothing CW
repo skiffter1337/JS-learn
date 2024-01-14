@@ -1,0 +1,8 @@
+function possiblyPerfect(key,answers) {
+    let grade = []
+    answers.forEach((el, index) => {
+        if(key[index] === "_") return
+        el === key[index] ? grade.push(true) : grade.push(false)
+    })
+    return grade.every(el => el === true) || grade.every(el => el === false)
+}
