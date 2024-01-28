@@ -1,0 +1,3 @@
+function createPhoneNumber(numbers){
+    return `(${numbers.slice(0, 3).toString().replaceAll(',', '')}) ${numbers.slice(3, 6).toString().replaceAll(',', '')}-${numbers.slice(6, 10).toString().replaceAll(',', '')}`
+}
