@@ -1,0 +1,10 @@
+function minSum(arr) {
+    let sortedArr = arr.sort((a, b) => a - b)
+    let acc = 0
+    for (let i = sortedArr.length / 2; i > 0; i--) {
+        acc += (sortedArr[0] * sortedArr.at(-1))
+        sortedArr.shift()
+        sortedArr.pop()
+    }
+    return acc
+}
