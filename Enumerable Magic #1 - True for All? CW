@@ -1,0 +1,1 @@
+const all = ( arr, fun ) => arr.every(el => fun(el))
