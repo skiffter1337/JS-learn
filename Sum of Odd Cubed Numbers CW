@@ -1,0 +1,1 @@
+const cubeOdd = (arr) => arr.some(el => typeof el !== "number") ? undefined: arr.map(el => Math.pow(el, 3)).reduce((acc, el) => el % 2 !== 0 ? acc + el : acc, 0)
