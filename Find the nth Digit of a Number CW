@@ -1,0 +1,4 @@
+const findDigit = (num, nth) => {
+    const numArr = num.toString().split('').reverse().filter(el => el !== '-')
+    return nth > numArr.length ? 0 : nth <= 0 ? -1 : parseInt(numArr[nth - 1])
+}
