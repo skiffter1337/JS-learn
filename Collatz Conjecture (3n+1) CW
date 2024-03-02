@@ -1,0 +1,6 @@
+const hotpo = (n, res = 0) => {
+    if(n === 0) return 0;
+    if(n === 1) return res;
+    res++;
+    return n % 2 === 0 ? hotpo(n / 2, res) : hotpo(n * 3 + 1, res);
+}
