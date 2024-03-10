@@ -1,0 +1,13 @@
+function duplicateCount(text){
+    let res = 0
+    let copyText = text.toLowerCase()
+    if(text === '') return res
+    text.toLowerCase().split('').forEach(el => {
+        const filtered = copyText.split('').filter(el2 => el === el2)
+        if(filtered.length > 1) {
+            copyText = copyText.replaceAll(el, '')
+            res++
+        }
+    })
+    return res
+}
