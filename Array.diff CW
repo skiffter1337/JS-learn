@@ -1,0 +1,4 @@
+function arrayDiff(a, b) {
+  if(b.lenght === 0) return 
+  return a.filter((el, index) => !b.includes(el) )
+}
