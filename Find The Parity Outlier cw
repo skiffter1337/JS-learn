@@ -1,0 +1,3 @@
+function findOutlier(n){
+      return n.filter(el => el % 2 === 0).length > 1 ? n.filter(el => el % 2 !== 0)[0] : n.filter(el => el % 2 === 0)[0]
+}
