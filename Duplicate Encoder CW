@@ -1,0 +1,12 @@
+function duplicateEncode(word){
+const lowered = word.toLowerCase()
+    let res = ''
+    for (let i = 0; i < lowered.length; i++) {
+        if(lowered.split(lowered.split('')[i]).length - 1 > 1) {
+            res = res + ')'
+        } else {
+            res = res + '('
+        }
+    }
+    return res
+}
