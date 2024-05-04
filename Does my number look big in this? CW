@@ -1,0 +1,6 @@
+function narcissistic(value) {
+    const stringifiedValue = `${value}`
+    if(stringifiedValue.length === 1) return true
+    const res = stringifiedValue.split('').reduce((acc, el) => acc + Math.pow(el, stringifiedValue.length), 0)
+    return res === value
+}
