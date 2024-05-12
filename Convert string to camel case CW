@@ -1,0 +1,13 @@
+function toCamelCase(str){
+    if(str === '' ) return str
+    let parsedStr = str.replaceAll('_', '-')
+    return parsedStr.split('-').map((el, index) => {
+        if(index === 0) {
+            return el
+        }
+        if(el.length > 1) {
+            return (el[0].toUpperCase() + el.slice(1))
+        }
+        return el.toUpperCase()
+    }).join('')
+}
