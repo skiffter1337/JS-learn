@@ -1,0 +1,10 @@
+function order(words){
+    const sortedNums = words.replace(/\D/g, '').split('').sort((a,b) => a - b)
+    let res = []
+    const splitedWords = words.split(' ')
+    for(let i = 0; i < words.split(' ').length; i++) {
+        res.push(words.split(' ').filter(el => el.includes(sortedNums[i]))[0])
+
+    }
+    return res.join(' ')
+}
