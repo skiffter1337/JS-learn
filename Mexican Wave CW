@@ -1,0 +1,11 @@
+function wave(str) {
+    let lowerCasedStr = str.toLowerCase();
+    let res = [];
+    for (let i = 0; i < lowerCasedStr.length; i++) {
+        if(lowerCasedStr[i] !== ' ') {
+            res.push(lowerCasedStr.split('').map((el, idx) => idx === i ? el.toUpperCase() : el).join(''))
+        }
+
+    }
+    return res
+}
