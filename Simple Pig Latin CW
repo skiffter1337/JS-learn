@@ -1,0 +1,11 @@
+function pigIt(str) {
+    const lettersOnly = /^[A-Za-z0-9]+$/
+    return str.split(' ').map(el => {
+            if (!lettersOnly.test(el)) {
+                return el
+            } else {
+                return (el + el[0]).slice(1) + 'ay'
+            }
+        }
+    ).join(' ')
+}
